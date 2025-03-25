@@ -3,49 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benvenuto</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pagina di Benvenuto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">Mio Sito</div>
-            <ul class="nav-links">
+        <nav>
+            <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">Chi Siamo</a></li>
-                <li><a href="#services">Servizi</a></li>
-                <li><a href="#contact">Contatti</a></li>
+                <li><a href="#chi-siamo">Chi Siamo</a></li>
+                <li><a href="#servizi">Servizi</a></li>
+                <li><a href="#contatti">Contatti</a></li>
             </ul>
         </nav>
     </header>
-    <section id="home" class="welcome-section">
-        <div class="welcome-content">
-            <h1>Benvenuto nel nostro mondo!</h1>
-            <p>Esplora e scopri contenuti incredibili creati per te.</p>
-            <a href="#about" class="btn">Scopri di più</a>
-        </div>
-    </section>
-    <section id="about" class="about-section">
-        <h2>Chi Siamo</h2>
-        <p>Siamo un team dedicato a offrire esperienze memorabili attraverso soluzioni innovative e creative.</p>
-    </section>
-    <section id="services" class="services-section">
-        <h2>Servizi</h2>
-        <div class="service-item">
-            <h3>Design</h3>
-            <p>Creiamo design che fanno la differenza.</p>
-        </div>
-        <div class="service-item">
-            <h3>Marketing</h3>
-            <p>Strategie che portano risultati tangibili.</p>
-        </div>
-        <div class="service-item">
-            <h3>Sviluppo</h3>
-            <p>Soluzioni tecnologiche su misura per te.</p>
-        </div>
-    </section>
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h1>Benvenuto sul nostro sito!</h1>
+                <p>Scopri di più su di noi e i nostri servizi.</p>
+                <a href="#chi-siamo" class="btn">Scopri di più</a>
+            </div>
+        </section>
+        <section id="chi-siamo">
+            <h2>Chi Siamo</h2>
+            <p>Siamo un'azienda leader nel nostro settore, dedicata alla qualità e all'innovazione.</p>
+        </section>
+        <section id="servizi">
+            <h2>Servizi</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Servizio 1</h3>
+                    <p>Descrizione del servizio 1.</p>
+                </div>
+                <div class="service">
+                    <h3>Servizio 2</h3>
+                    <p>Descrizione del servizio 2.</p>
+                </div>
+                <div class="service">
+                    <h3>Servizio 3</h3>
+                    <p>Descrizione del servizio 3.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contatti">
+            <h2>Contatti</h2>
+            <p>Se hai domande o desideri contattarci, non esitare a farlo.</p>
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="messaggio">Messaggio:</label>
+                <textarea id="messaggio" name="messaggio" required></textarea>
+                <button type="submit" class="btn">Invia</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2025 Mio Sito. Tutti i diritti riservati.</p>
+        <p>&copy; 2023 La Tua Azienda. Tutti i diritti riservati.</p>
     </footer>
 </body>
 </html>
